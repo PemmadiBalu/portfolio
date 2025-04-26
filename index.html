@@ -4,12 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pemmadi Balu | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
+
   <nav class="navbar">
+    <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">&#9776;</label> <!-- This is the menu icon (☰) -->
+    </label>
     <div class="logo">Portfolio</div>
     <ul class="menu-bar">
+   
+    <ul class="menu-bar" id="menu-bar"></ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">skills</a></li>
@@ -17,6 +26,7 @@
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact Me</a></li>
     </ul>
+
   </nav>
   <div class="container">
     <main class="main-content">
@@ -24,8 +34,6 @@
       <section id="home" class="section">
         <img src="balu.png" alt="Pemmadi Balu" class="profile-image right" width="190" height="190" />
 
-
-       
         <h4>Welcome to My Portfolio</h4>
         <h6>I'm</h6>
         <h4>PEMMADI BALU</h4>
@@ -44,12 +52,10 @@
       <div class="social-links">
         <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" title="LinkedIn">
           <img width="27" height="27" src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-          <i class="fab fa-linkedin"><h6></h6></i>
         </a>
         
         <a href="https://github.com/PemmadiBalu" target="_blank" title="GitHub">
           <img width="27" height="27" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
-         <i class="fab fa-github"><h6></h6></i>
         </a>
           <a href="balu2025.pdf" target="_blank" title="Resume">
           <img width="27" height="27" src="https://img.icons8.com/material-outlined/24/resume.png" alt="Resume"/>
@@ -221,3 +227,4 @@ Developed a deep learning-based system to detect COVID-19 infection from chest X
   <script src="test.js"></script>
 </body>
 </html>
+
