@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -12,13 +12,19 @@
 <body>
 
   <nav class="navbar">
+     <!-- Hidden checkbox to toggle menu -->
     <input type="checkbox" id="check">
+    <!-- Hamburger icon -->
   <label for="check" class="checkbtn">&#9776;</label> <!-- This is the menu icon (☰) -->
-    </label>
-    <div class="logo">Portfolio</div>
-    <ul class="menu-bar">
+  
+
+    <!-- Logo -->
+  <div class="logo">Portfolio</div>
    
     <ul class="menu-bar" id="menu-bar"></ul>
+    <ul class="menu-bar">
+      <label for="check" class="closebtn">&times;</label>
+       <!-- Navigation links -->
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">skills</a></li>
@@ -42,20 +48,22 @@
         
         <h2>About Me</h2>  
         <div class="about-container">
-          <img src="balu.png" alt="Pemmadi Balu" class="profile-image left" width="190" height="190" /> 
+          <!-- Profile Picture -->
+          <img src="balu.png" alt="Profile Picture" class="w-full h-full rounded-full object-cover">
           <div class="about-text">
             <p>Hi! I’m a recent B.Tech graduate in Computer Science and Engineering (Artificial Intelligence & Data Science), Class of 2025, from Kakinada Institute of Engineering and Technology (affiliated with JNTUK University). I’ve always been curious about how things work—especially when it comes to technology and using it to solve real-life problems</p>
             <div class="btns">
 
-               <!-- Social Icons and Resume -->
+               <!-- Social Icons and LinkedIn -->
       <div class="social-links">
         <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" title="LinkedIn">
           <img width="27" height="27" src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
         </a>
-        
+             <!-- Social Icons and GitHub -->
         <a href="https://github.com/PemmadiBalu" target="_blank" title="GitHub">
           <img width="27" height="27" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
         </a>
+             <!-- Social Icons and Resume -->
           <a href="Balu_resume_.pdf" target="_blank" title="Resume">
           <img width="27" height="27" src="https://img.icons8.com/material-outlined/24/resume.png" alt="Resume"/>
           <h6></h6>
@@ -64,7 +72,7 @@
         </div>
       </section>
       </div>
-
+          <!-- Skills Section -->
       <section id="skills" class="section">
         <h2>Skills</h2>
         <div class="skills">
@@ -100,11 +108,45 @@
         </ul>
         </div>
       </section>
-
+           <!-- Projects Section -->
       <section id="projects" class="section">
 
         <h2>Projects</h2>
        
+        <div class="project">
+          <h3>GUI Calculator – Python</h3>
+          <img src="gui calculator.png" alt="gui Calculator">
+          <p>
+            Developed a simple AI-powered chatbot utilizing natural language processing (NLP) techniques. The chatbot is designed to understand and respond to user queries, providing relevant and accurate information. It can handle basic conversation and offers a smooth user experience with real-time interactions. This project highlights the application of AI in building interactive systems that can assist in various domains.
+          </p>
+          <p><strong>Key Features:</strong>
+          <li>Simple and clean interface using Tkinter.</li>
+          <li>Supports standard mathematical operations.</li>
+          <li>Error handling for invalid inputs.</li>
+          <li>Lightweight, fast, and responsive.</li>
+          <p><strong>Tools & Technologies:</strong> Python, Tkinter, GUI Development</p>
+          <a href="https://github.com/PemmadiBalu/python--calculator-" target="_blank">View on GitHub</a>
+          <!-- <p><a href="https://github.com/yourusername/gui-calculator" target="_blank">View on GitHub</a></p> -->
+        </div>
+      
+        
+      
+        <div class="project">
+          <h3>AI-Powered Chatbot</h3>
+          <img src="Ai-chartboat.png" alt="Ai-chartboat">
+          <p>
+            Created a simple yet effective chatbot using natural language processing (NLP) techniques. The chatbot is capable of understanding user queries and providing accurate, relevant responses. It uses machine learning algorithms to improve interaction over time, offering a seamless user experience for answering common questions and providing helpful information.
+          </p>
+          <p><strong>Key Features:</strong>
+            <li>Understands and processes natural language input using NLP</li>
+            <li>Learns from user interactions to improve responses over time</li>
+          <p><strong>Tools & Technologies:</strong> Python, NLP, NLTK, Machine Learning</p>
+          <a href="https://github.com/PemmadiBalu/simple-ai-chart_bot-" target="_blank">View on GitHub</a>
+          <!-- <p><a href="https://github.com/yourusername/ai-chatbot" target="_blank">View on GitHub</a></p> -->
+        </div>
+
+
+
         <div class="project">
           <img width="" height=""src="covid-19-chest-xray.png" alt="COVID Detection X-ray">
 
@@ -127,77 +169,65 @@ Developed a deep learning-based system to detect COVID-19 infection from chest X
             
             <li>Evaluated model performance using accuracy, precision, recall, and F1-score.</li>
           <p><strong>Tools & Technologies:</strong> Python, TensorFlow, Keras, OpenCV, NumPy, Matplotlib, Jupyter Notebook</p>
-
-        </div>
-      
-        <div class="project">
-          <h3>GUI Calculator – Python</h3>
-          <img src="gui calculator.png" alt="gui Calculator">
-          <p>
-            Developed a simple AI-powered chatbot utilizing natural language processing (NLP) techniques. The chatbot is designed to understand and respond to user queries, providing relevant and accurate information. It can handle basic conversation and offers a smooth user experience with real-time interactions. This project highlights the application of AI in building interactive systems that can assist in various domains.
-          </p>
-          <p><strong>Key Features:</strong>
-          <li>Simple and clean interface using Tkinter.</li>
-          <li>Supports standard mathematical operations.</li>
-          <li>Error handling for invalid inputs.</li>
-          <li>Lightweight, fast, and responsive.</li>
-          
-
-          <p><strong>Tools & Technologies:</strong> Python, Tkinter, GUI Development</p>
-          <!-- <p><a href="https://github.com/yourusername/gui-calculator" target="_blank">View on GitHub</a></p> -->
-        </div>
-      
-        <div class="project">
-          <h3>AI-Powered Chatbot</h3>
-          <img src="Ai-chartboat.png" alt="Ai-chartboat">
-          <p>
-            Created a simple yet effective chatbot using natural language processing (NLP) techniques. The chatbot is capable of understanding user queries and providing accurate, relevant responses. It uses machine learning algorithms to improve interaction over time, offering a seamless user experience for answering common questions and providing helpful information.
-          </p>
-          <p><strong>Key Features:</strong>
-            <li>Understands and processes natural language input using NLP</li>
-            <li>Learns from user interactions to improve responses over time</li>
-            
-          <p><strong>Tools & Technologies:</strong> Python, NLP, NLTK, Machine Learning</p>
+          <a href="https://github.com/PemmadiBalu/COVID_19_XRAY_DETECTION" target="_blank">View on GitHub</a>
           <!-- <p><a href="https://github.com/yourusername/ai-chatbot" target="_blank">View on GitHub</a></p> -->
-        </div>
-      </section>
-      
 
-      <section id="certifications" class="section certifications-section">
-        <h2>Certifications</h2>
-        <div class="certs-grid">
-          <div>
-            <img src="salesforce.png" alt="Salesforce Internship" width="250" height="290">
-            <p>Salesforce Internship (8 Weeks)</p>
-          </div>
-          <div>
-            <img src="RPA.png" alt="UiPath RPA Internship" width="250" height="300">
-            <p>UiPath RPA Internship (8 Weeks)</p>
-          </div>
-          <div>
-            <img src="aiml.png" alt="Google AI-ML Internship" width="250" height="290">
-            <p>Google AI-ML Virtual Internship</p>
-          </div>
-          <div>
-            <img src="aids.png" alt="Oneroadmap AI-DS Internship" width="250" height="290">
-            <p>Oneroadmap AI-DS certificate</p>
-          </div>
-          <div>
-            <img src="edyst.png" alt="Python Programming" width="250" height="290">
-            <p>Edyst Python Programming</p>
         </div>
-          <div>
-            <img src="aws.png" alt="Web Development" width="250" height="290">
-            <p>AWS Cloud certificate</p>
-          </div>
-          <div>
-            <img src="Infosys.png" alt="Data Science" width="250" height="290">
-            <p>Infosys Machine learning with go </p>
+
+        <div class="project">
+          <h3>Telegram Bot Project</h3>
+          <img src="telegram_bot_img.jpg" alt="Telegram Bot">
+          <p>
+            Developed a Telegram bot that shares Simplilearn learning playlists and integrates my personal portfolio website. 
+  The bot allows users to easily access educational resources, contact information, and provide feedback directly within Telegram.
+          </p>
+          <p><strong>Key Features:</strong>
+            <p><strong>Key Features:</strong></p>
+               <li>Provides direct links to Python, SQL, AI, ML, and Java playlists</li>
+               <li>Shares personal portfolio website hosted on GitHub Pages</li>
+               <li>Accepts and stores user feedback from within the bot</li>
+               <li>Simple and user-friendly interaction through Telegram commands</li>
+
+          <p><strong>Tools & Technologies:</strong> Python, python-telegram-bot, GitHub Pages, Telegram Bot API</p>
+          <a href="https://github.com/PemmadiBalu/bot_for_telegram" target="_blank">View on GitHub</a>
+
+            <!-- <p><a href="https://github.com/yourusername/telegram-portfolio-bot" target="_blank">View on GitHub</a></p> -->
+
+
+        </div>
       </section>
+
+          <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section"> 
+         <h2>Certifications</h2> 
+         <div class="certs-grid"> 
+            <div> <img src="edyst.png" alt="Python Programming" width="250" height="290"> 
+              <p>Edyst Python Programming</p></div>
+            
+           <div> <img src="Infosys.png" alt="Data Science" width="250" height="290"> 
+             <p>Infosys Machine learning with go </p></div>
+
+           <div> <img src="RPA.png" alt="UiPath RPA Internship" width="250" height="300"> 
+            <p>UiPath RPA Internship (8 Weeks)</p> </div>
+
+           <div> <img src="salesforce.png" alt="Salesforce Internship" width="250" height="290"> 
+            <p>Internship (8 Weeks)</p> </div>
+
+           <div> <img src="aiml.png" alt="Google AI-ML Internship" width="250" height="290"> 
+            <p>Google AI-ML Virtual Internship</p> </div>
+
+           <div> <img src="aids.png" alt="Oneroadmap AI-DS Internship" width="250" height="290"> 
+            <p>Oneroadmap AI-DS certificate</p> </div>
+
+           <div> <img src="aws.png" alt="AWS Cloud" width="250" height="290">
+            <p>AWS Cloud certificate</p> </div>
+          </div>
+        </section>
 
       <section id="contact" class="section">
-        <div class="container">
-          <h2>Contact Me</h2>
+       <div class="container">
+         <h2>Contact Me</h2>
+
           <!-- Contact form -->
           <form id="contactForm">
             <input type="text" placeholder="Your Name" required />
@@ -206,24 +236,43 @@ Developed a deep learning-based system to detect COVID-19 infection from chest X
             <button type="submit">Send Message</button>
           </form>
         </div>
-        <!-- Display your contact email -->
-        <p><h2> can also reach me directly at: </h2></p>
-          <a href="mailto:balupemmadi44@gmail.com">balupemmadi44@gmail.com</a>
-          <p><h6>Connect with me on social media:</h6></p>
 
-          <p>
-            <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" title="LinkedIn">
-              <img width="28" height="28" src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-            </a>
-          </p>
+        <!-- Display your contact email -->
+       <div class="social-media">
+           <h3>Can also reach me directly at social media:</h3>
+              <div class="contact-icons">
+                  <!-- Email -->
+                       <a href="mailto:balupemmadi44@gmail.com" target="_blank" title="Email">
+                           <img src="https://img.icons8.com/?size=100&id=63&format=png&color=000000" 
+                                     alt="Email" class="social-icon"/> 
+                        </a>
+
+                  <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" title="LinkedIn">
+                              <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" 
+                                   alt="LinkedIn" class="social-icon"/> 
+                        </a>
+
+                  <!-- WhatsApp -->
+                        <a href="https://wa.me/919989913586?text=Hello%20Balu,%20I%20want%20to%20connect%20with%20you" target="_blank" title="WhatsApp">
+                              <img src="https://img.icons8.com/?size=100&id=sWf0uqytq2d8&format=png&color=000000" 
+                                  alt="WhatsApp" class="social-icon"/> 
+                        </a>
+               </div>
+         </div>
+
       </section>
     </main>
   </div>
   <footer class="footer">
        <p>Thank you for visiting my portfolio website!</p>
         <p>Designed by Pemmadi Balu</p>
+
   <script src="test.js"></script>
 </body>
 </html>
+
+
+
 
 
