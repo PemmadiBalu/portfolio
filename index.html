@@ -5,268 +5,203 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pemmadi Balu | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
-     <!-- Hidden checkbox to toggle menu -->
+    <div class="logo">Portfolio</div>
     <input type="checkbox" id="check">
-    <!-- Hamburger icon -->
-  <label for="check" class="checkbtn">&#9776;</label> <!-- This is the menu icon (☰) -->
-  
+    <label for="check" class="checkbtn">&#9776;</label>
 
-    <!-- Logo -->
-  <div class="logo">Portfolio</div>
-   
-    <ul class="menu-bar" id="menu-bar"></ul>
     <ul class="menu-bar">
       <label for="check" class="closebtn">&times;</label>
-       <!-- Navigation links -->
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="#home" onclick="document.getElementById('check').checked=false;">Home</a></li>
+      <li><a href="#about" onclick="document.getElementById('check').checked=false;">About</a></li>
+      <li><a href="#skills" onclick="document.getElementById('check').checked=false;">Skills</a></li>
+      <li><a href="#projects" onclick="document.getElementById('check').checked=false;">Projects</a></li>
+      <li><a href="#certifications" onclick="document.getElementById('check').checked=false;">Certifications</a></li>
+      <li><a href="#contact" onclick="document.getElementById('check').checked=false;">Contact Me</a></li>
     </ul>
-
   </nav>
-  <div class="container">
-    <main class="main-content">
-      <h2>Home</h2> 
-      <section id="home" class="section">
 
-        <h4>Welcome to My Portfolio</h4>
-        <h6>I'm</h6>
-        <h4>PEMMADI BALU</h4>
-      </section>
-
-      <section id="about" class="section">
-        
-        <h2>About Me</h2>  
-        <div class="about-container">
-          <!-- Profile Picture -->
-          <img src="balu.png" alt="Profile Picture" class="w-full h-full rounded-full object-cover">
-          <div class="about-text">
-            <p>Hi! I’m a recent B.Tech graduate in Computer Science and Engineering (Artificial Intelligence & Data Science), Class of 2025, from Kakinada Institute of Engineering and Technology (affiliated with JNTUK University). I’ve always been curious about how things work—especially when it comes to technology and using it to solve real-life problems</p>
-            <div class="btns">
-
-               <!-- Social Icons and LinkedIn -->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" title="LinkedIn">
-          <img width="27" height="27" src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-        </a>
-             <!-- Social Icons and GitHub -->
-        <a href="https://github.com/PemmadiBalu" target="_blank" title="GitHub">
-          <img width="27" height="27" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
-        </a>
-             <!-- Social Icons and Resume -->
-          <a href="Balu_resume_.pdf" target="_blank" title="Resume">
-          <img width="27" height="27" src="https://img.icons8.com/material-outlined/24/resume.png" alt="Resume"/>
-          <h6></h6>
-        </a>
-          </div>
-        </div>
-      </section>
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h2>Home</h2>
+    <div class="home-container">
+      <div class="profile-image">
+        <img src="balu.jpg" alt="Profile Picture" class="profile-image">
       </div>
-          <!-- Skills Section -->
-      <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-        <h3>Programming Languages</h3>
-        <ul>
-          <li>Python</li>
-          <li>JavaScript(Basic)</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SQL</li>
-        </ul>
-        
-      
-        <h3>Data Science & AI Tools</h3>
-        <ul>
-          <li>NumPy</li>
-          <li>Pandas</li>
-          <li>Matplotlib</li>
-          <li>TensorFlow</li>
-          <li>Natural Language Processing (NLP)</li>
-          <li>Machine Learning</li>
-          <li>Deep Learning</li>
 
-        </ul>
-      
-        <h3>Tools & Productivity</h3>
-        <ul>
-          <li>MS Excel</li>
-          <li>MS Word</li>
-          <li>VS Code</li>
-          <li>Git & GitHub</li>
-          <li>Jupyter Notebook</li>
-        </ul>
+      <div class="intro-text">
+        <h3>Welcome to My Portfolio</h3>
+        <h4>I’m <strong>PEMMADI BALU</strong></h4>
+        <p>B.Tech – CSE (Artificial Intelligence & Data Science), Expected Graduation: 2025</p>
+        <p><i class="fa-solid fa-location-dot"></i> Location: Korangi, Kakinada, Andhra Pradesh</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:balupemmadi44@gmail.com">balupemmadi44@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> Mobile: <a href="tel:9989913586">9989913586</a></p>
+        <p><i class="fa-solid fa-cake-candles"></i> Date of Birth: 13/06/2004</p>
+
+        <div class="social-links">
+          <a href="Balu_resume_.pdf" target="_blank" class="social-btn cv">
+            <i class="fa-solid fa-file-pdf"></i> CV
+          </a>
+          <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" class="social-btn linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/PemmadiBalu" target="_blank" class="social-btn github">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
         </div>
-      </section>
-           <!-- Projects Section -->
-      <section id="projects" class="section">
+      </div>
+    </div>
+  </section>
 
-        <h2>Projects</h2>
-       
-        <div class="project">
-          <h3>GUI Calculator – Python</h3>
-          <img src="gui calculator.png" alt="gui Calculator">
-          <p>
-            Developed a simple AI-powered chatbot utilizing natural language processing (NLP) techniques. The chatbot is designed to understand and respond to user queries, providing relevant and accurate information. It can handle basic conversation and offers a smooth user experience with real-time interactions. This project highlights the application of AI in building interactive systems that can assist in various domains.
-          </p>
-          <p><strong>Key Features:</strong>
-          <li>Simple and clean interface using Tkinter.</li>
-          <li>Supports standard mathematical operations.</li>
-          <li>Error handling for invalid inputs.</li>
-          <li>Lightweight, fast, and responsive.</li>
-          <p><strong>Tools & Technologies:</strong> Python, Tkinter, GUI Development</p>
-          <a href="https://github.com/PemmadiBalu/python--calculator-" target="_blank">View on GitHub</a>
-          <!-- <p><a href="https://github.com/yourusername/gui-calculator" target="_blank">View on GitHub</a></p> -->
-        </div>
-      
-        
-      
-        <div class="project">
-          <h3>AI-Powered Chatbot</h3>
-          <img src="Ai-chartboat.png" alt="Ai-chartboat">
-          <p>
-            Created a simple yet effective chatbot using natural language processing (NLP) techniques. The chatbot is capable of understanding user queries and providing accurate, relevant responses. It uses machine learning algorithms to improve interaction over time, offering a seamless user experience for answering common questions and providing helpful information.
-          </p>
-          <p><strong>Key Features:</strong>
-            <li>Understands and processes natural language input using NLP</li>
-            <li>Learns from user interactions to improve responses over time</li>
-          <p><strong>Tools & Technologies:</strong> Python, NLP, NLTK, Machine Learning</p>
-          <a href="https://github.com/PemmadiBalu/simple-ai-chart_bot-" target="_blank">View on GitHub</a>
-          <!-- <p><a href="https://github.com/yourusername/ai-chatbot" target="_blank">View on GitHub</a></p> -->
-        </div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="balu.jpg" alt="Profile Picture" class="profile-img">
+      <p>Hi! I’m Balu Pemmadi, a B.Tech graduate in Computer Science and Engineering (Artificial Intelligence & Data Science), Class of 2025, from KIET (affiliated with JNTUK), graduating with a 7.38 CGPA.
+       I’m passionate about Artificial Intelligence, Data Science, and Web Development, and I love solving real-world problems using Machine Learning, Deep Learning, and Data Analytics.
+       With hands-on experience in Python, Flask, HTML, CSS, JavaScript, SQL, and AI frameworks, I have developed projects such as AI Chatbots, Data Analysis Dashboards, and Automation Tools.
+    </p>
+    </div>
+  </section>
 
+  <!-- Skills Section -->
+  <!-- Skills Section -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
 
+  <div class="skills">
+    <div class="skill">
+      <p>Python</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%;">90%</div>
+      </div>
+    </div>
 
-        <div class="project">
-          <img width="" height=""src="covid-19-chest-xray.png" alt="COVID Detection X-ray">
+    <div class="skill">
+      <p>HTML, CSS, JavaScript</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 85%;">85%</div>
+      </div>
+    </div>
 
-          <h3>COVID 19 detection chest X Ray</h3>
-          <p>
-            Overview:
-Developed a deep learning-based system to detect COVID-19 infection from chest X-ray images. This project aims to support the medical community by providing a fast and reliable diagnosis method using computer vision.
-          </p>
-          <p><strong>Key Features:</strong>
+    <div class="skill">
+      <p>SQL & Data Analysis</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 70%;">70%</div>
+      </div>
+    </div>
 
-            <li>Used Convolutional Neural Networks (CNNs) for image classification</li>
-            
-            <li>Trained on publicly available datasets of chest X-rays (COVID-positive and normal).</li>
-            
-            <li>Achieved high accuracy in binary classification (COVID vs. Non-COVID).</li>
-            
-            <li>Implemented data preprocessing techniques like normalization and augmentation.</li>
-            
-            <li>Built using Python, TensorFlow/Keras, and OpenCV.</li>
-            
-            <li>Evaluated model performance using accuracy, precision, recall, and F1-score.</li>
-          <p><strong>Tools & Technologies:</strong> Python, TensorFlow, Keras, OpenCV, NumPy, Matplotlib, Jupyter Notebook</p>
-          <a href="https://github.com/PemmadiBalu/COVID_19_XRAY_DETECTION" target="_blank">View on GitHub</a>
-          <!-- <p><a href="https://github.com/yourusername/ai-chatbot" target="_blank">View on GitHub</a></p> -->
+    <div class="skill">
+      <p>Machine Learning</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 75%;">75%</div>
+      </div>
+    </div>
 
-        </div>
-
-        <div class="project">
-          <h3>Telegram Bot Project</h3>
-          <img src="telegram_bot_img.jpg" alt="Telegram Bot">
-          <p>
-            Developed a Telegram bot that shares Simplilearn learning playlists and integrates my personal portfolio website. 
-  The bot allows users to easily access educational resources, contact information, and provide feedback directly within Telegram.
-          </p>
-          <p><strong>Key Features:</strong>
-            <p><strong>Key Features:</strong></p>
-               <li>Provides direct links to Python, SQL, AI, ML, and Java playlists</li>
-               <li>Shares personal portfolio website hosted on GitHub Pages</li>
-               <li>Accepts and stores user feedback from within the bot</li>
-               <li>Simple and user-friendly interaction through Telegram commands</li>
-
-          <p><strong>Tools & Technologies:</strong> Python, python-telegram-bot, GitHub Pages, Telegram Bot API</p>
-          <a href="https://github.com/PemmadiBalu/bot_for_telegram" target="_blank">View on GitHub</a>
-
-            <!-- <p><a href="https://github.com/yourusername/telegram-portfolio-bot" target="_blank">View on GitHub</a></p> -->
-
-
-        </div>
-      </section>
-
-          <!-- Certifications Section -->
-        <section id="certifications" class="section certifications-section"> 
-         <h2>Certifications</h2> 
-         <div class="certs-grid"> 
-            <div> <img src="edyst.png" alt="Python Programming" width="250" height="290"> 
-              <p>Edyst Python Programming</p></div>
-            
-           <div> <img src="Infosys.png" alt="Data Science" width="250" height="290"> 
-             <p>Infosys Machine learning with go </p></div>
-
-           <div> <img src="RPA.png" alt="UiPath RPA Internship" width="250" height="300"> 
-            <p>UiPath RPA Internship (8 Weeks)</p> </div>
-
-           <div> <img src="salesforce.png" alt="Salesforce Internship" width="250" height="290"> 
-            <p>Internship (8 Weeks)</p> </div>
-
-           <div> <img src="aiml.png" alt="Google AI-ML Internship" width="250" height="290"> 
-            <p>Google AI-ML Virtual Internship</p> </div>
-
-           <div> <img src="aids.png" alt="Oneroadmap AI-DS Internship" width="250" height="290"> 
-            <p>Oneroadmap AI-DS certificate</p> </div>
-
-           <div> <img src="aws.png" alt="AWS Cloud" width="250" height="290">
-            <p>AWS Cloud certificate</p> </div>
-          </div>
-        </section>
-
-      <section id="contact" class="section">
-       <div class="container">
-         <h2>Contact Me</h2>
-
-          <!-- Contact form -->
-          <form id="contactForm">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-
-        <!-- Display your contact email -->
-       <div class="social-media">
-           <h3>Can also reach me directly at social media:</h3>
-              <div class="contact-icons">
-                  <!-- Email -->
-                       <a href="mailto:balupemmadi44@gmail.com" target="_blank" title="Email">
-                           <img src="https://img.icons8.com/?size=100&id=63&format=png&color=000000" 
-                                     alt="Email" class="social-icon"/> 
-                        </a>
-
-                  <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/balu-pemmadi-3a45352a6/" target="_blank" title="LinkedIn">
-                              <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" 
-                                   alt="LinkedIn" class="social-icon"/> 
-                        </a>
-
-                  <!-- WhatsApp -->
-                        <a href="https://wa.me/919989913586?text=Hello%20Balu,%20I%20want%20to%20connect%20with%20you" target="_blank" title="WhatsApp">
-                              <img src="https://img.icons8.com/?size=100&id=sWf0uqytq2d8&format=png&color=000000" 
-                                  alt="WhatsApp" class="social-icon"/> 
-                        </a>
-               </div>
-         </div>
-
-      </section>
-    </main>
+    <div class="skill">
+      <p>Flask</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 75%;">75%</div>
+      </div>
+    </div>
   </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <a href="https://github.com/PemmadiBalu/python--calculator-" target="_blank">
+          <img src="gui calculator.png" alt="GUI Calculator" class="project-img">
+        </a>
+        <h3>GUI Calculator</h3>
+        <p>Built with Python Tkinter</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/PemmadiBalu/simple-ai-chart_bot-" target="_blank">
+          <img src="Ai-chartboat.png" alt="AI Chatbot" class="project-img">
+        </a>
+        <h3>AI Chatbot</h3>
+        <p>Simple chatbot with Python</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/PemmadiBalu/COVID_19_XRAY_DETECTION" target="_blank">
+          <img src="covid-19-chest-xray.png" alt="COVID-19 Detection" class="project-img">
+        </a>
+        <h3>COVID-19 Detection</h3>
+        <p>Deep learning with X-Ray images</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/PemmadiBalu/bot_for_telegram" target="_blank">
+          <img src="telegram_bot_img.jpg" alt="Telegram Bot" class="project-img">
+        </a>
+        <h3>Telegram Bot</h3>
+        <p>Automation with Python</p>
+      </div>
+    </div>
+    <p class="projects-summary">15+ projects completed</p>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="certs-grid">
+      <div class="cert-card"><img src="edyst.png" alt="Edyst Python Programming"><p>Edyst Python Programming</p></div>
+      <div class="cert-card"><img src="infosys.png" alt="Infosys Machine Learning"><p>Infosys Machine Learning</p></div>
+      <div class="cert-card"><img src="RPA.png" alt="UiPath RPA Internship"><p>UiPath RPA Internship</p></div>
+      <div class="cert-card"><img src="salesforce.png" alt="Salesforce Internship"><p>Salesforce Internship</p></div>
+      <div class="cert-card"><img src="aiml.png" alt="Google AI-ML Internship"><p>Google AI-ML Internship</p></div>
+      <div class="cert-card"><img src="aws.png" alt="AWS Cloud Certificate"><p>AWS Cloud Certificate</p></div>
+    </div>
+
+    <div class="all-certs">
+       <a href="all-certifications.pdf" target="_blank" class="cert-btn">
+        View All Certifications
+      </a>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <input type="hidden" name="access_key" value="ebad3c7a-a7eb-4a11-97f0-7ee26c66c958">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <h2>My Location</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.133028890236!2d82.229147!3d16.810009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382061fca929b5%3A0xc3e101fe95ae204f!2sKorangi%2C%20Andhra%20Pradesh%20533461!5e0!3m2!1sen!2sin!4v1694960000000!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="social-links">
+      <a href="mailto:balupemmadi44@gmail.com" target="_blank" class="social-btn email"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/balu-pemmadi" target="_blank" class="social-btn linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/PemmadiBalu" target="_blank" class="social-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
-       <p>Thank you for visiting my portfolio website!</p>
-        <p>Designed by Pemmadi Balu</p>
+    <div class="footer-container">
+      <p>Thank you for visiting my portfolio website!</p>
+      <p>Designed by Pemmadi Balu</p>
+      <p>&copy; 2025 Balu Pemmadi. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="test.js"></script>
 </body>
