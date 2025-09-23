@@ -73,7 +73,7 @@
     right: -100%; /* hidden by default */
     width: 150px;
     height: 70vh;
-    background-color: #3498db;
+    background-color:     background-color: #13627e;
     flex-direction: column;
     padding-top: 65px;
     transition: center 0.3s ease-in-out;
@@ -733,5 +733,6 @@ h2::after {
     opacity: 1;
   }
 }
+
 
 
