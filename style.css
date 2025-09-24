@@ -25,7 +25,7 @@
 /* Menu links */
 .navbar .menu-bar li a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s;
@@ -724,6 +724,7 @@ h2::after {
     opacity: 1;
   }
 }
+
 
 
 
