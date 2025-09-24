@@ -1,3 +1,4 @@
+
 /* ---------------- NAVBAR ---------------- */
 .navbar {
   display: flex;
@@ -5,7 +6,7 @@
   align-items: center;
   padding: 15px 30px;
   background-color: #13627e;
-  color: #fff;
+  color: #f1e8e8;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -25,7 +26,7 @@
 /* Menu links */
 .navbar .menu-bar li a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s;
@@ -724,6 +725,10 @@ h2::after {
     opacity: 1;
   }
 }
+
+
+
+
 
 
 
