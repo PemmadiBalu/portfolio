@@ -1,11 +1,3 @@
-/* style.css */
-
-.menu-bar a.active {
-  color: #9fcbe9;
-  font-weight: bold;
-}
-
-
 /* ---------------- NAVBAR ---------------- */
 .navbar {
   display: flex;
@@ -73,7 +65,7 @@
     right: -100%; /* hidden by default */
     width: 150px;
     height: 70vh;
-    background-color:     background-color: #13627e;
+    background-color: #13627e;
     flex-direction: column;
     padding-top: 65px;
     transition: center 0.3s ease-in-out;
@@ -362,7 +354,6 @@
 }
 
 .project-card {
-  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -542,7 +533,7 @@
 /* ---------------- CONTACT SECTION ---------------- */
 #contact {
   padding: 60px 20px;
-   background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
+  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
   text-align: center;
 }
 
@@ -733,6 +724,8 @@ h2::after {
     opacity: 1;
   }
 }
+
+
 
 
 
