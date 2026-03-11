@@ -1,13 +1,66 @@
 
 
+/* ---------------- PARTICLE BACKGROUND ---------------- */
+
+body{
+  margin: 1%;;
+  padding: 1px;;
+  font-family: Arial, sans-serif;
+  background:#0f172a;
+  overflow-x:hidden;
+}
+
+#particles-js{ 
+  
+  position: fixed; 
+  width: 450%; 
+  height:450%; 
+  top:0; 
+  left:0; 
+  background:#0f172a; 
+  z-index:-1; }
+
+/* Sections appear above animation */
+.section{
+  position:relative;
+  z-index:1;
+  padding:60px 20px;
+}
+
+/* Optional glass effect for sections */
+.section{
+  background: rgba(16, 13, 39, 0);
+  backdrop-filter: blur(6px);
+  border-radius:20px;
+  margin:20px;
+}
+
+/* Navbar always on top */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* Smooth scroll */
+html{
+  scroll-behavior:smooth;
+}
+
+
+
+
+
+
 
 /* ---------------- NAVBAR ---------------- */
+/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #13627e;
+  background-color: #0f172a;
   color: #f1e8e8;
   position: sticky;
   top: 0;
@@ -68,7 +121,7 @@
     right: -100%; /* hidden by default */
     width: 150px;
     height: 70vh;
-    background-color: #13627e;
+    background-color: #0f172a;
     flex-direction: column;
     padding-top: 65px;
     transition: center 0.3s ease-in-out;
@@ -119,7 +172,7 @@
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
+
   padding: 20px;
 }
 
@@ -143,7 +196,7 @@
 .intro-text p {
   font-size: 1rem;
   margin: 6px 0;
-  color: #2c3e50;
+  color: #fdfeff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +204,7 @@
   
 }
 
-.intro-text p a { color: #347adb; text-decoration: none; }
+.intro-text p a { color: #338aec; text-decoration: none; }
 .intro-text p a:hover { text-decoration: underline; }
 .intro-text p i { color: #3498db; font-size: 1.1rem; }
 
@@ -178,7 +231,7 @@
 
 .social-btn.cv { background: #e74c3c; }
 .social-btn.linkedin { background: #0077b5; }
-.social-btn.github { background: #333; }
+.social-btn.github { background: #1ca841; }
 
 .social-btn:hover { transform: translateY(-3px); opacity: 0.85; }
 
@@ -194,7 +247,7 @@
 /* ---------------- ABOUT SECTION ---------------- */
 #about {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
+  
   text-align: center;
 }
 
@@ -223,7 +276,7 @@
 .about-container p {
   font-size: 1rem;
   line-height: 1.7;
-  color: #2c3e50;
+  color: #fdfeff;
   text-align: center; /* Center text under the image */
 }
 
@@ -269,14 +322,14 @@
 /* ---------------- SKILLS SECTION ---------------- */
 #skills {
   padding: 60px 20px;
- background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
+  
   text-align: center;
 }
 
 #skills h2 {
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #0b1012;
+  color: #fbfeff;
 }
 
 /* Skill Container */
@@ -293,13 +346,13 @@
 .skill p {
   font-weight: bold;
   margin-bottom: 5px;
-  color: #2c3e50;
+  color: #eff4f4;
 }
 
 /* Progress Bar Container */
 .progress {
   width: 100%;
-  background: #dfe6ed;
+  background: #f6f7f7;
   border-radius: 15px;
   overflow: hidden;
   height: 15px;
@@ -308,11 +361,11 @@
 /* Progress Fill */
 .progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, rgb(33, 107, 113) );
+  background: linear-gradient(90deg, rgb(136, 237, 247) );
   text-align: right;
   padding-right: 15px;
   line-height: 15px;
-  color: #fff;
+  color:#000000;
   font-weight: bold;
   border-radius: 25px 0 0 25px;
   transition: width 1s ease-in-out;
@@ -347,16 +400,19 @@
   }
 }
 
+/*--------------end skill section--------------*/
+
 
 /* ---------------- PROJECTS SECTION ---------------- */
-#projects{
-  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
-}
+
+  
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .project-card {
@@ -366,12 +422,12 @@
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 25px rgb(250, 250, 250);
 }
 
 .project-card a {
@@ -402,21 +458,24 @@
   padding: 0 10px;
 }
 
-/* Center the button on the page */
+
+
+
+/* Center the button in view all projects */
 
 /* Container (optional) */
 .view-all-projects-btn {
   text-align: center;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 50px;
+  padding: 35px;
 }
 
 /* Main button styling */
 .view-all-projects {
   display: inline-block;
   text-decoration: none;
-  border: 2px solid ;
-  background: linear-gradient(90deg, #2ca9d2, #5b1515 ); /* two red shades */
+  border: 2px solid #ffffff; /* Added border color */
+  background: linear-gradient(90deg, #2ca9d2, #5b1515);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 600;
@@ -456,19 +515,56 @@
 }
 
 
+/* ------------------------------- */
+/* 📱 Responsive Styles (ONLY ADDED) */
+/* ------------------------------- */
 
+/* Mobile - iPhone & Small Screens */
+@media (max-width: 767px) {
+  .view-all-projects {
+    font-size: 0.9rem;
+    padding: 7px 20px;
+    border-radius: 8px;
+  }
+  .view-all-projects-btn {
+    margin-top: 80px;
+    padding: 25px;
+  }
+}
+
+/* Tablet / iPad */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .view-all-projects {
+    font-size: 1rem;
+    padding: 8px 24px;
+    border-radius: 9px;
+  }
+  .view-all-projects-btn {
+    margin-top: 110px;
+    padding: 30px;
+  }
+}
+
+/* Desktop / Large Screen */
+@media (min-width: 1024px) {
+  .view-all-projects {
+    font-size: 1.1rem;
+    padding: 9px 25px;
+  }
+}
+   
 
 
 /* ---------------- CERTIFICATIONS SECTION ---------------- */
 #certifications {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
+  
   text-align: center;
 }
 
 #certifications h2 {
   font-size: 2rem;
-  color: #07090b;
+  color: #ffffff;
   margin-bottom: 40px;
   position: relative;
 }
@@ -491,12 +587,12 @@
 }
 
 .cert-card {
-  background: #fff;
+  background: #f3f2f2;
   border-radius: 10px;
   padding: 20px;
   width: 100%;
   max-width: 220px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(119, 111, 111, 0.664);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -509,7 +605,7 @@
 
 .cert-card p {
   font-size: 0.95rem;
-  color: #2c3e50;
+  color: #111010;
   font-weight: 500;
 }
 
@@ -562,7 +658,7 @@
   font-weight: 600;
   padding: 9px 25px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -573,7 +669,7 @@
 .cert-btn:hover {
   transform: translateY(-5px) scale(1.05);
   background: linear-gradient(90deg, #060101, #787777);
-  box-shadow: 0 15px 35px rgba(185, 28, 28, 0.5);
+  box-shadow: 0 15px 35px rgba(252, 252, 252, 0.852);
 }
 
 /* Optional shimmer animation */
@@ -598,14 +694,14 @@
 /* ---------------- CONTACT SECTION ---------------- */
 #contact {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #d0e6f7, #f7f9fc);
+  
   text-align: center;
 }
 
 #contact h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #010102;
+  color: #fcfcff;
   position: relative;
 }
 
@@ -664,7 +760,7 @@
   margin: 35px auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgb(138, 139, 115);
 }
 
 /* Social Links */
@@ -714,7 +810,7 @@
 
 /* ---------------- FOOTER ---------------- */
 .footer {
-  background-color: #13627e;
+  background-color: #05212b;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -751,7 +847,7 @@
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #3498db;
+  color: #f2f5f8;
   text-align: center;
   position: relative;
 }
@@ -762,7 +858,7 @@ h2 {
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #010406;
+  color: #eff8f8;
   text-align: center;
   position: relative;
 }
@@ -774,7 +870,7 @@ h2::after {
   bottom: -10px;
   width: 50px;              /* small underline width */
   height: 3px;
-  background: linear-gradient(90deg, #100f0f, #110f0f, #000000);
+  background: linear-gradient(90deg, #ffffff, #110f0f, #ffffff);
   transform: translateX(-50%);
   animation: underlinePulse 2s ease-in-out infinite;
 }
@@ -789,6 +885,5 @@ h2::after {
     opacity: 1;
   }
 }
-
 
 
